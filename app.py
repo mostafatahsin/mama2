@@ -56,8 +56,8 @@ def make_plot():
     
     # Add plot
     p = figure(plot_height=500, plot_width=500, title="Top Five IT Industry Skills",
-               tools="pan, wheel_zoom,zoom_in,zoom_out,save,reset", tooltips="@country: @value", x_range = (-0.5,1))
-
+               tools="pan, wheel_zoom,zoom_in,zoom_out,save,reset", x_range = (-0.5,1))
+    #tooltips="@country: @value",
     p.wedge(x=0, y=1, radius=0.35, 
             start_angle=cumsum('angle', include_zero=True), end_angle=cumsum('angle'),
             line_color="white", fill_color='color', legend_field='country', source=data)

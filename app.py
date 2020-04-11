@@ -14,7 +14,8 @@ from bokeh.embed import components
 import pandas as pd
 import math
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates') 
+#app = Flask(__name__)
 # 5000
 def make_plot():
 

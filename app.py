@@ -83,7 +83,7 @@ def make_plot():
 
     p.add_tools(hover)
 
-    show(p)
+    #show(p)
     #output_notebook()
 
     script, div = components(p)
